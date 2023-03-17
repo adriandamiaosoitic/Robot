@@ -1,0 +1,19 @@
+name: Testes Robot Framework
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Instala dependências
+        run: |
+          pip install -r requirements.txt
+      - name: Executa testes do Robot Framework
+        run: |
+          robot testes/
