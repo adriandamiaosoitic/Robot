@@ -10,6 +10,10 @@ jobs:
   testes:
     runs-on: ubuntu-latest
     steps:
+      - name: Configuração do Chrome
+      - uses: actions/setup-chrome@v2
+        with:
+          chrome-version: '94.0.4606.81'
       - uses: actions/checkout@v2
       - name: Instala dependências
         run: |
