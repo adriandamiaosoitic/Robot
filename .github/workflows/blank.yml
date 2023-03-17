@@ -16,4 +16,4 @@ jobs:
           pip install -r requirements.txt
       - name: Executa testes do Robot Framework
         run: |
-          robot ./
+          robot quality_assurance/Test/Login/
