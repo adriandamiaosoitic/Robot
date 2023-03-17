@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.11.0 on win32)" generated="20221203 09:53:11.921" rpa="false">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\matheus.lemes\.vscode\extensions\robocorp.robotframework-lsp-1.5.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Dado que estou na tela de login do metracloud">
+<msg timestamp="20221203 09:53:14.254" level="FAIL">No keyword with name 'Dado que estou na tela de login do metracloud' found.</msg>
+<status status="FAIL" starttime="20221203 09:53:14.254" endtime="20221203 09:53:14.254"></status>
+</kw>
+<status status="PASS" starttime="20221203 09:53:11.954" endtime="20221203 09:53:15.119"></status>
+</kw>
+<status status="PASS" starttime="20221203 09:53:11.953" endtime="20221203 09:53:15.120" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20221203 09:53:11.925" endtime="20221203 09:53:15.122"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
