@@ -8,7 +8,7 @@ Test Teardown       Fechar Navegador
 
 *** Test Cases ***
 Caso de Teste 01 - Cadastro de um CAT com sucesso
-    [Documentation]        Realiza o cadastro de um CAT emitido por Autoridade Pública
+    [Documentation]        Realiza o cadastro de um CAT emitido por Autoridade Pública.
     [Tags]                 CAT
     Dado que estou na tela de login do metracloud
 	E for efetuado o Login
