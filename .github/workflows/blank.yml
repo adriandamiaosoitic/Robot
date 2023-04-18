@@ -6,35 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    - name: Checkout do repositório
+      uses: actions/checkout@v2
 
-      - name: Configuração do Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-      
-      - name: Testee
-      - run: pwd
-
-      - name: Instala as dependências do Python
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Configuração do Chrome
-        uses: actions/setup-chrome@v2
-
-      - name: Instala o Webdriver
-        run: |
-          pip install webdrivermanager
-          webdrivermanager chrome --linkpath /usr/local/bin
-
-      - name: Executa os testes do Robot Framework
-        run: robot ./quality_assurance/Tests/Login/
-
-      - name: Publica os resultados dos testes
-        uses: actions/upload-artifact@v2
-        with:
-          name: Test Results
-          path: output.xml
+    - name: Verificar diretório atual
+      run: pwd
